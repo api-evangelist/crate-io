@@ -1,0 +1,81 @@
+{
+    "name": "Crate.io",
+    "description": "An open source real-time SQL database with integrated search that is simple to scale. It is ideal for storing and analyzing IoT and machine data in real time.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/19926-crate.jpg",
+    "tags": [
+        "api service provider",
+        "databases",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/crate-io\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Crate.io",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/19926-crate.jpg",
+            "humanURL": "https:\/\/crate.io\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/crate-io-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/crate-io-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/crate.io\/blog"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/crate-technology"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/crate.io\/docs"
+        },
+        {
+            "type": "Email",
+            "url": "media@crate.io"
+        },
+        {
+            "type": "Email",
+            "url": "meetups@crate.io"
+        },
+        {
+            "type": "Email",
+            "url": "support@crate.io"
+        },
+        {
+            "type": "Email",
+            "url": "office@crate.io"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@crate.io"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/crate"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/CrateIO"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/crate.io\/"
+        }
+    ]
+}
