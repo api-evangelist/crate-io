@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://cratedb.com/docs/cloud/en/latest/reference/api.html + https://cratedb.com/docs
+summary:
+  types: [http-basic, http-basic-apikey, jwt]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: cloud-api-key
+  type: http
+  scheme: basic
+  applies_to: CrateDB Cloud API (https://console.cratedb.cloud/api/v2)
+  description: >-
+    HTTP Basic authentication using a CrateDB Cloud API key id (username) and
+    secret (password). Keys are generated from the account settings page and
+    inherit the permissions of the user who created them.
+  docs: https://cratedb.com/docs/cloud/en/latest/reference/api.html
+- name: db-user-password
+  type: http
+  scheme: basic
+  applies_to: CrateDB HTTP SQL endpoint / PostgreSQL wire protocol
+  description: >-
+    CrateDB database users authenticate with username/password (HTTP Basic on
+    the /_sql endpoint, or standard PostgreSQL auth on the wire protocol),
+    governed by host-based access control (HBA) rules.
+  docs: https://cratedb.com/docs/crate/reference/en/latest/admin/auth/index.html
+- name: db-jwt
+  type: http
+  scheme: bearer
+  bearerFormat: JWT
+  applies_to: CrateDB HTTP SQL endpoint
+  description: >-
+    CrateDB supports JWT-based authentication for database users, configurable
+    through HBA rules (jwt auth method).
+  docs: https://cratedb.com/docs/crate/reference/en/latest/admin/auth/methods.html
+transport_security:
+  tls: required-in-cloud
+  note: CrateDB Cloud endpoints are TLS-only; self-managed clusters can enable SSL.
