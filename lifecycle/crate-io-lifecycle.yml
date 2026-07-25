@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: https://cratedb.com/docs/crate/reference/en/latest/appendices/release-notes/index.html
+versioning:
+  scheme: semantic-versioning
+  format: MAJOR.MINOR.PATCH
+  current: 6.4.0
+  current_released: '2026-07-06'
+  docs: https://cratedb.com/docs/crate/reference/en/latest/appendices/release-notes/index.html
+  active_branches: [6.x, 5.x, 4.x]
+cloud_api_versioning:
+  scheme: uri-path
+  current: v2
+  base: https://console.cratedb.cloud/api/v2
+release_notes: https://cratedb.com/docs/crate/reference/en/latest/appendices/release-notes/index.html
+deprecation:
+  policy: >-
+    Deprecations are announced in the versioned release notes ahead of removal in a
+    subsequent major release; no separate standalone deprecation-policy page is published.
+  sunset_header: false
+sla:
+  url: https://cratedb.com/legal/service-level-agreement
+  scope: CrateDB Cloud
+support_policy: https://cratedb.com/legal/support-policy
+status_page: https://cratedb.statuspage.io/

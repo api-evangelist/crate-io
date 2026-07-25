@@ -1,0 +1,52 @@
+generated: '2026-07-18'
+method: searched
+source: https://cratedb.com/docs/crate/reference/en/latest/interfaces/http.html
+authentication:
+  style: http-basic / jwt (see authentication/crate-io-authentication.yml)
+request:
+  http_sql_endpoint:
+    method: POST
+    path: /_sql
+    default_port: 4200
+    content_type: application/json
+    body_fields:
+      stmt: SQL statement string (required)
+      args: array of positional parameters for $1/$2 or ? placeholders (optional)
+      bulk_args: array of arrays for bulk INSERT/UPDATE/DELETE (optional)
+    headers:
+      Default-Schema: optional schema name (defaults to "doc")
+    query_params:
+      types: append ?types to include col_types in the response
+response:
+  envelope_fields:
+    cols: array of column names
+    rows: array of result rows
+    rowcount: number of affected/returned rows
+    col_types: array of data-type ids (only when ?types requested)
+    duration: query duration in ms
+pagination:
+  style: sql
+  mechanism: LIMIT / OFFSET clauses in the SQL statement (no cursor/offset API params)
+bulk_operations:
+  supported: true
+  field: bulk_args
+  note: One statement executed once per row of bulk_args; per-row results returned.
+idempotency:
+  header_supported: false
+  note: >-
+    CrateDB does not document an idempotency-key header. Idempotency is achieved
+    at the SQL level (e.g. INSERT ... ON CONFLICT DO UPDATE / primary-key upserts).
+error_envelope:
+  shape: '{"error": {"code": <int>, "message": <string>}}'
+  code_range: 4000-5035
+  reference: errors/crate-io-error-codes.yml
+versioning:
+  scheme: semantic-versioning
+  reference: lifecycle/crate-io-lifecycle.yml
+rate_limiting:
+  signaled: false
+  note: No documented rate-limit response headers on the SQL endpoint.
+cross_references:
+  errors: errors/crate-io-error-codes.yml
+  lifecycle: lifecycle/crate-io-lifecycle.yml
+  authentication: authentication/crate-io-authentication.yml

@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+source: https://cratedb.com/docs + https://github.com/crate
+clis:
+- name: crash
+  title: CrateDB Shell
+  description: >-
+    Interactive command-line SQL shell for CrateDB. Connects to the HTTP SQL
+    endpoint, runs statements, and formats result sets.
+  install:
+  - pip install crash
+  repository: https://github.com/crate/crash
+  package: https://pypi.org/project/crash/
+  version: 0.32.0
+  usage: crash --hosts https://<cluster-host>:4200
+  commands:
+  - group: session
+    examples: ["\\connect <host>", "\\c <schema>", "\\format <mixed|tabular|json|csv>"]
+  - group: query
+    examples: ["SELECT ... ;", "\\r (read statement from file)", "\\dt (list tables)"]
+- name: croud
+  title: CrateDB Cloud CLI
+  description: >-
+    Command-line interface for CrateDB Cloud. Manages organizations, projects,
+    clusters, users, roles, and subscriptions via the CrateDB Cloud API.
+  install:
+  - pip install croud
+  repository: https://github.com/crate/croud
+  package: https://pypi.org/project/croud/
+  version: 1.15.0
+  auth: croud login (interactive) or API key credentials
+  command_groups:
+  - name: clusters
+    description: List, deploy, scale, upgrade, and delete CrateDB Cloud clusters.
+  - name: projects
+    description: Manage projects within an organization.
+  - name: organizations
+    description: Manage organizations and members.
+  - name: users
+    description: Manage users and roles.
+  - name: subscriptions
+    description: Manage subscriptions and billing.

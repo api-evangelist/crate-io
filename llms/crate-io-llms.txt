@@ -1,0 +1,46 @@
+# Crate.io (CrateDB)
+
+> Crate.io is the company behind CrateDB, a distributed SQL database for real-time analytics on large volumes of operational data. CrateDB unifies time-series, JSON/document, full-text search, vector, geospatial, and relational data behind standard SQL, is PostgreSQL wire-protocol compatible, and is built on Lucene. Developers use CrateDB through a JSON-over-HTTP SQL endpoint (POST /_sql, port 4200) and manage the CrateDB Cloud service through the CrateDB Cloud REST API. CrateDB Cloud is certified to ISO 27001 and SOC 2 Type II.
+
+## APIs
+
+- [CrateDB Cloud API](https://cratedb.com/docs/cloud/en/latest/reference/api.html): Manage organizations, projects, clusters, users, roles, and subscriptions. Base: https://console.cratedb.cloud/api/v2 (HTTP Basic API keys).
+- [CrateDB HTTP SQL Endpoint](https://cratedb.com/docs/crate/reference/en/latest/interfaces/http.html): JSON-over-HTTP SQL (POST /_sql, port 4200).
+
+## Docs
+
+- [Documentation](https://cratedb.com/docs)
+- [Getting Started Guide](https://cratedb.com/docs/guide/)
+- [Cloud API Reference](https://cratedb.com/docs/cloud/en/latest/reference/api.html)
+- [HTTP SQL Interface](https://cratedb.com/docs/crate/reference/en/latest/interfaces/http.html)
+- [Release Notes](https://cratedb.com/docs/crate/reference/en/latest/appendices/release-notes/index.html)
+- [Community](https://community.cratedb.com/)
+
+## SDKs & Tools
+
+- [crate (Python client)](https://pypi.org/project/crate/)
+- [sqlalchemy-cratedb](https://pypi.org/project/sqlalchemy-cratedb/)
+- [cratedb-toolkit (SDK)](https://pypi.org/project/cratedb-toolkit/)
+- [crate-jdbc (Java)](https://repo1.maven.org/maven2/io/crate/crate-jdbc/)
+- [crash (CrateDB Shell CLI)](https://pypi.org/project/crash/)
+- [croud (CrateDB Cloud CLI)](https://pypi.org/project/croud/)
+- [cratedb-mcp (MCP server)](https://github.com/crate/cratedb-mcp)
+
+## Artifacts
+
+- [Packages / SDKs](packages/crate-io-packages.yml)
+- [MCP Server](mcp/crate-io-mcp.yml)
+- [Authentication](authentication/crate-io-authentication.yml)
+- [API Conventions](conventions/crate-io-conventions.yml)
+- [Error Codes](errors/crate-io-error-codes.yml)
+- [Lifecycle](lifecycle/crate-io-lifecycle.yml)
+- [Changelog](changelog/crate-io-changelog.yml)
+- [Conformance](conformance/crate-io-conformance.yml)
+
+## Company
+
+- [GitHub Organization](https://github.com/crate)
+- [Pricing](https://cratedb.com/pricing)
+- [Blog](https://cratedb.com/blog)
+- [Security & Compliance](https://cratedb.com/security)
+- [Status](https://cratedb.statuspage.io/)

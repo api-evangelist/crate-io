@@ -1,8 +1,31 @@
 aid: crate-io
 name: Crate Io
-description: Crate Io is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Crate.io is the company behind CrateDB, a distributed SQL database engineered
+  for real-time analytics on large volumes of operational data. CrateDB unifies
+  time-series, JSON/document, full-text search, vector, geospatial, and
+  relational data behind standard SQL, is PostgreSQL wire-protocol compatible,
+  and is built on Lucene for horizontal scalability and sub-second queries over
+  billions of rows. Developers interact with CrateDB through an HTTP SQL
+  endpoint (POST /_sql on port 4200) and with the managed CrateDB Cloud service
+  through the CrateDB Cloud REST API (https://console.cratedb.cloud/api/v2),
+  which manages organizations, projects, clusters, users, roles, subscriptions,
+  and audit logs. Crate.io is a Speedinvest portfolio company; CrateDB Cloud is
+  certified to ISO 27001 and SOC 2 Type II.
 url: https://raw.githubusercontent.com/api-evangelist/crate-io/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cratedb.com/hubfs/cr-featured-image-23.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +34,120 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Database
+- SQL
+- Distributed Database
+- Analytics
+- Time Series
+- Vector Database
+- IoT
+- Cloud
+- Developer Tools
+apis:
+- name: CrateDB Cloud API
+  description: >-
+    The CrateDB Cloud REST API manages CrateDB Cloud resources — organizations,
+    regions, projects, clusters, products, users, roles, subscriptions, and
+    audit logs. Authentication uses HTTP Basic auth with an API key id and
+    secret generated from the CrateDB Cloud account settings; keys inherit the
+    permissions of the user who created them.
+  humanURL: https://cratedb.com/docs/cloud/en/latest/reference/api.html
+  baseURL: https://console.cratedb.cloud/api/v2
+  tags:
+  - Cloud
+  - Management API
+  - Clusters
+  properties:
+  - type: Documentation
+    url: https://cratedb.com/docs/cloud/en/latest/reference/api.html
+  - type: APIReference
+    url: https://console.cratedb.cloud/api/docs
+- name: CrateDB HTTP SQL Endpoint
+  description: >-
+    CrateDB's native developer interface: a JSON-over-HTTP SQL endpoint. Clients
+    POST a JSON body ({"stmt": "...", "args": [...], "bulk_args": [[...]]}) to
+    /_sql (default port 4200) and receive cols/rows/rowcount/col_types.
+    PostgreSQL wire protocol is also supported. Errors return a structured
+    {"error": {"code": N, "message": "..."}} envelope with codes in the
+    4000-5035 range.
+  humanURL: https://cratedb.com/docs/crate/reference/en/latest/interfaces/http.html
+  baseURL: https://console.cratedb.cloud
+  tags:
+  - SQL
+  - HTTP
+  - Database
+  properties:
+  - type: Documentation
+    url: https://cratedb.com/docs/crate/reference/en/latest/interfaces/http.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DeveloperPortal
+  url: https://console.cratedb.cloud/
+- type: Documentation
+  url: https://cratedb.com/docs
+- type: APIReference
+  url: https://cratedb.com/docs/cloud/en/latest/reference/api.html
+- type: GettingStarted
+  url: https://cratedb.com/docs/guide/
+- type: Support
+  url: https://cratedb.com/support
+- type: HelpCenter
+  url: https://community.cratedb.com/
+- type: Blog
+  url: https://cratedb.com/blog
+- type: GitHubOrganization
+  url: https://github.com/crate
+- type: Pricing
+  url: https://cratedb.com/pricing
+- type: SignUp
+  url: https://console.cratedb.cloud/
+- type: TermsOfService
+  url: https://cratedb.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://cratedb.com/legal/privacy-policy
+- type: StatusPage
+  url: https://cratedb.statuspage.io/
+- type: Packages
+  url: packages/crate-io-packages.yml
+- type: SDKs
+  url: packages/crate-io-packages.yml
+- type: CLI
+  url: cli/crate-io-cli.yml
+- type: MCPServer
+  url: mcp/crate-io-mcp.yml
+- type: LLMsTxt
+  url: llms/crate-io-llms.txt
+- type: Authentication
+  url: authentication/crate-io-authentication.yml
+- type: Conventions
+  url: conventions/crate-io-conventions.yml
+- type: ErrorCatalog
+  url: errors/crate-io-error-codes.yml
+- type: Lifecycle
+  url: lifecycle/crate-io-lifecycle.yml
+- type: ChangeLog
+  url: changelog/crate-io-changelog.yml
+- type: Conformance
+  url: conformance/crate-io-conformance.yml
+- type: Compliance
+  url: https://cratedb.com/security
+- type: DomainSecurity
+  url: security/crate-io-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/crate-io-vulnerability-disclosure.yml
+- type: Security
+  url: https://github.com/crate/crate/security
+- type: TrustCenter
+  url: security/crate-io-trust-center.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

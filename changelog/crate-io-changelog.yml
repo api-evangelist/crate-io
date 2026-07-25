@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/crate/crate/releases + https://cratedb.com/docs/crate/reference/en/latest/appendices/release-notes/index.html
+scheme: semantic-versioning
+current_version: 6.4.0
+changelog_url: https://cratedb.com/docs/crate/reference/en/latest/appendices/release-notes/index.html
+entries:
+- version: 6.4.0
+  date: '2026-07-06'
+  type: minor
+  highlights: Latest stable minor release on the 6.x line.
+- version: 6.3.5
+  date: '2026-07-06'
+  type: patch
+  highlights: Maintenance/patch release on the 6.3 branch.
+- version: 6.2.11
+  date: '2026-07-06'
+  type: patch
+  highlights: Backported fixes for the 6.2 branch.
+- version: 6.1.6
+  date: '2026-07-06'
+  type: patch
+  highlights: Backported fixes for the 6.1 branch.
+- version: 6.0.8
+  date: '2026-07-06'
+  type: patch
+  highlights: Backported fixes for the 6.0 branch.
+- version: 6.3.4
+  date: '2026-06-22'
+  type: patch
+  highlights: Maintenance release on the 6.3 branch.
+note: >-
+  Per-version detail (breaking changes vs additions) is published in the versioned
+  release notes; dates sourced from GitHub release publish timestamps.

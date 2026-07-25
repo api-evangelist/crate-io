@@ -1,0 +1,96 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/crate + package registries (PyPI, Maven Central, npm, crates.io)
+packages:
+- language: python
+  registry: pypi
+  name: crate
+  url: https://pypi.org/project/crate/
+  install: pip install crate
+  version: 2.2.1
+  description: CrateDB Python client (DB API 2.0) for the HTTP SQL endpoint.
+  repository: https://github.com/crate/crate-python
+  official: true
+- language: python
+  registry: pypi
+  name: sqlalchemy-cratedb
+  url: https://pypi.org/project/sqlalchemy-cratedb/
+  install: pip install sqlalchemy-cratedb
+  version: 0.43.1
+  description: SQLAlchemy dialect for CrateDB.
+  repository: https://github.com/crate/sqlalchemy-cratedb
+  official: true
+- language: python
+  registry: pypi
+  name: cratedb-toolkit
+  url: https://pypi.org/project/cratedb-toolkit/
+  install: pip install cratedb-toolkit
+  version: 0.0.49
+  description: CrateDB Toolkit, an SDK for CrateDB and CrateDB Cloud.
+  repository: https://github.com/crate/cratedb-toolkit
+  official: true
+- language: python
+  registry: pypi
+  name: dbt-cratedb2
+  url: https://pypi.org/project/dbt-cratedb2/
+  install: pip install dbt-cratedb2
+  description: dbt adapter for CrateDB 5.5 and higher.
+  repository: https://github.com/crate/dbt-cratedb2
+  official: true
+- language: java
+  registry: maven-central
+  name: io.crate:crate-jdbc
+  url: https://repo1.maven.org/maven2/io/crate/crate-jdbc/
+  install: 'implementation ''io.crate:crate-jdbc:2.7.0'''
+  version: 2.7.0
+  description: CrateDB JDBC driver.
+  repository: https://github.com/crate/crate-jdbc
+  official: true
+- language: python
+  registry: pypi
+  name: crash
+  url: https://pypi.org/project/crash/
+  install: pip install crash
+  version: 0.32.0
+  description: CrateDB Shell (crash) — interactive SQL command-line client.
+  repository: https://github.com/crate/crash
+  official: true
+  kind: cli
+- language: python
+  registry: pypi
+  name: croud
+  url: https://pypi.org/project/croud/
+  install: pip install croud
+  version: 1.15.0
+  description: Command-line interface for CrateDB Cloud.
+  repository: https://github.com/crate/croud
+  official: true
+  kind: cli
+- language: python
+  registry: pypi
+  name: cratedb-mcp
+  url: https://pypi.org/project/cratedb-mcp/
+  install: pip install cratedb-mcp
+  version: 0.1.2
+  description: CrateDB MCP Server for natural-language Text-to-SQL and documentation retrieval.
+  repository: https://github.com/crate/cratedb-mcp
+  official: true
+  kind: mcp-server
+- language: javascript
+  registry: npm
+  name: node-crate
+  url: https://www.npmjs.com/package/node-crate
+  install: npm install node-crate
+  version: 3.0.0
+  description: Node.js SQL driver for CrateDB (community-maintained).
+  repository: https://github.com/megastef/node-crate
+  official: false
+- language: rust
+  registry: crates.io
+  name: cratedb
+  url: https://crates.io/crates/cratedb
+  install: cargo add cratedb
+  version: 1.1.0
+  description: Rust CrateDB client (community-maintained).
+  repository: https://github.com/celaus/rust-cratedb
+  official: false

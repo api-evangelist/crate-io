@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://github.com/crate/cratedb-mcp
+server:
+  name: cratedb-mcp
+  description: >-
+    Official CrateDB MCP Server providing natural-language Text-to-SQL query
+    execution against a CrateDB cluster and retrieval over CrateDB documentation.
+  transport: stdio
+  install: pip install cratedb-mcp
+  package: https://pypi.org/project/cratedb-mcp/
+  repository: https://github.com/crate/cratedb-mcp
+  documentation: https://cratedb-mcp.readthedocs.io/
+  version: 0.1.2
+tools:
+- name: query_sql
+  description: Execute a read-only SQL query against the configured CrateDB cluster.
+- name: get_table_metadata
+  description: Retrieve schema/table metadata to ground Text-to-SQL generation.
+- name: get_health
+  description: Report CrateDB cluster health.
+- name: fetch_cratedb_docs
+  description: Retrieve relevant CrateDB documentation for a natural-language question.
+note: >-
+  Tool list summarized from the published cratedb-mcp server documentation; see
+  the repository/readthedocs for the authoritative, versioned tool surface.

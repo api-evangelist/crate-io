@@ -1,0 +1,14 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://cratedb.com/security
+url: https://cratedb.com/security
+certifications:
+- SOC 2 Type II
+- ISO 27001
+scope: CrateDB Cloud
+evidence:
+- source: https://cratedb.com/security
+  keywords:
+  - soc 2
+  - iso 27001

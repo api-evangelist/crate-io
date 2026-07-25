@@ -1,0 +1,106 @@
+generated: '2026-07-18'
+method: searched
+source: https://cratedb.com/docs/crate/reference/en/latest/interfaces/http.html#error-codes
+format: cratedb-error-envelope
+envelope:
+  shape: '{"error": {"code": <int>, "message": <string>}}'
+  fields:
+    code: integer error code (4000-5035)
+    message: human-readable error message, often with an exception class prefix
+note: >-
+  CrateDB returns SQL errors on the HTTP endpoint as a structured error object.
+  The leading digit follows HTTP semantics (4xxx = client/request error,
+  5xxx = server error). Codes below are the documented registry classes.
+error_codes:
+- code: 4000
+  class: client-error
+  meaning: The statement contains an invalid syntax or semantic error.
+- code: 4001
+  class: client-error
+  meaning: The statement contains an invalid analyzer definition.
+- code: 4002
+  class: client-error
+  meaning: The name of the table is invalid.
+- code: 4003
+  class: client-error
+  meaning: Field type validation failed.
+- code: 4004
+  class: client-error
+  meaning: Possible feature not supported (yet).
+- code: 4005
+  class: client-error
+  meaning: Alter table using a table alias is not supported.
+- code: 4006
+  class: client-error
+  meaning: The used column alias is ambiguous.
+- code: 4007
+  class: client-error
+  meaning: The operation is not supported on this relation, as it is not accessible.
+- code: 4008
+  class: client-error
+  meaning: The name of the column is invalid.
+- code: 4009
+  class: client-error
+  meaning: A value is required but was not provided.
+- code: 4010
+  class: client-error
+  meaning: User is not authorized to perform the SQL statement.
+- code: 4011
+  class: client-error
+  meaning: Missing privilege for the user.
+- code: 4031
+  class: client-error
+  meaning: Only read operations are allowed on this node.
+- code: 4041
+  class: client-error
+  meaning: Unknown table.
+- code: 4042
+  class: client-error
+  meaning: Unknown partition.
+- code: 4043
+  class: client-error
+  meaning: Unknown schema.
+- code: 4044
+  class: client-error
+  meaning: Unknown repository.
+- code: 4045
+  class: client-error
+  meaning: Unknown snapshot.
+- code: 4046
+  class: client-error
+  meaning: Unknown user-defined function.
+- code: 4047
+  class: client-error
+  meaning: Unknown user.
+- code: 4091
+  class: client-error
+  meaning: A document with the same primary key exists already (DuplicateKeyException).
+- code: 4092
+  class: client-error
+  meaning: A VersionConflict occurred; the document was updated concurrently.
+- code: 4093
+  class: client-error
+  meaning: A relation with the same name exists already.
+- code: 4094
+  class: client-error
+  meaning: The used table alias contains tables with different schema.
+- code: 5000
+  class: server-error
+  meaning: Unhandled server error.
+- code: 5001
+  class: server-error
+  meaning: The execution of one or more tasks failed.
+- code: 5002
+  class: server-error
+  meaning: One or more shards are not available.
+- code: 5003
+  class: server-error
+  meaning: The query failed on one or more shards.
+- code: 5004
+  class: server-error
+  meaning: Creating a snapshot failed.
+- code: 5030
+  class: server-error
+  meaning: The query was killed by a kill statement.
+registry_note: See the CrateDB HTTP error-codes reference for the full 4xxx/5xxx registry.
+remediation_reference: https://cratedb.com/docs/crate/reference/en/latest/interfaces/http.html#error-codes
