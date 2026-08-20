@@ -59,6 +59,10 @@ apis:
   tags:
   - Cloud
   - Management API
+  - Cluster
+  tags_raw:
+  - Cloud
+  - Management API
   - Clusters
   properties:
   - type: Documentation
