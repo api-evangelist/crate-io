@@ -104,6 +104,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Website
+  url: https://www.cratedb.com/
 - type: DeveloperPortal
   url: https://console.cratedb.cloud/
 - type: Documentation
