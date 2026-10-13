@@ -1,0 +1,12 @@
+fetched: '2026-10-13'
+method: fetched
+source: https://raw.githubusercontent.com/crate/crate/master/README.rst
+page: https://raw.githubusercontent.com/crate/crate/master/README.rst
+file: crate-io-postgres-wire-1.md
+bytes: 7256
+sha256: aba6dfc93c18dfbd9184b377f32ee1a86e2b8c7741dba4a49c9d32ef702ba73c
+anchor: postgresql
+shape: postgres-wire
+classification: declares-compatibility
+quote: '- Use `standard SQL`_ via the `PostgreSQL wire protocol`_ or an `HTTP API`_.'
+note: text extracted from the provider's own page (tags stripped), saved for evidence

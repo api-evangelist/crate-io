@@ -1,0 +1,21 @@
+edges:
+- partner_name: PostgreSQL
+  partner: postgresql
+  partner_match: shape-anchor
+  channel: provider-built
+  relationship: compatible
+  direction: provider-built
+  shape: postgres-wire
+  type: docs
+  degree: declared-subset
+  evidence: https://raw.githubusercontent.com/crate/crate/master/README.rst
+  evidence_kind: own-docs
+  evidence_file: https://github.com/api-evangelist/crate-io/blob/main/evidence/compatibility/crate-io-postgres-wire-1.md
+  quote: '- Use `standard SQL`_ via the `PostgreSQL wire protocol`_ or an `HTTP API`_.'
+  supported_operations: []
+  unsupported_operations: []
+  supported_share: 0.0
+  detected_by: sweep-shape-compat.py
+  first_seen: '2026-10-13'
+generated: '2026-10-13'
+method: searched
