@@ -64,6 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Crate Io is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Crate.io is the company behind CrateDB, a distributed SQL database engineered for real-time analytics on large volumes of operational data. CrateDB unifies time-series, JSON/document, full-text search, vector, geospatial, and relational data behind standard SQL, is PostgreSQL wire-protocol compatible, and is built on Lucene for horizontal scalability and sub-second queries over billions of rows. Developers interact with CrateDB through an HTTP SQL endpoint (POST /_sql on port 4200) and with the managed CrateDB Cloud service through the CrateDB Cloud REST API (https://console.cratedb.cloud/api/v2), which manages organizations, projects, clusters, users, roles, subscriptions, and audit logs. Crate.io is a Speedinvest portfolio company; CrateDB Cloud is certified to ISO 27001 and SOC 2 Type II.
 
-Backed by: speedinvest
+**Areas:** Company · Database · SQL · Distributed Database · Analytics · Time Series · Vector Search · IoT · Cloud · Developer Tools
+
+## Crate Io on APIs.io
+
+Everything profiled for Crate Io is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/crate-io/](https://apis.io/providers/crate-io/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [CrateDB Cloud API](https://apis.io/apis/crate-io/cratedb-cloud-api/) — The CrateDB Cloud REST API manages CrateDB Cloud resources — organizations, regions, projects, clusters, products, users, roles, subscriptions, and audit…
+- [CrateDB HTTP SQL Endpoint](https://apis.io/apis/crate-io/cratedb-http-sql-endpoint/) — CrateDB's native developer interface: a JSON-over-HTTP SQL endpoint. Clients POST a JSON body ({"stmt": "...", "args": [...], "bulk_args": [[...]]}) to…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [cratedb-mcp](https://apis.io/servers/crate-io/cratedb-mcp/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Crate Io Authentication](https://apis.io/security/crate-io/crate-io-authentication/)
+- [Crate Io Domain Security](https://apis.io/security/crate-io/crate-io-domain-security/)
+- [Crate Io Trust Center](https://apis.io/security/crate-io/crate-io-trust-center/)
+- [Crate Io Vulnerability Disclosure](https://apis.io/security/crate-io/crate-io-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cratedb.com/)
+- [Documentation](https://cratedb.com/docs)
+- [Getting started](https://cratedb.com/docs/guide/)
+- [API reference](https://cratedb.com/docs/cloud/en/latest/reference/api.html)
+- [Pricing](https://cratedb.com/pricing)
+- [Sign up](https://console.cratedb.cloud/)
+- [Support](https://cratedb.com/support)
+- [Blog](https://cratedb.com/blog)
+- [Security](https://github.com/crate/crate/security)
+- [Compliance](https://cratedb.com/security)
+- [Terms of service](https://cratedb.com/legal/terms-of-service)
+- [Privacy policy](https://cratedb.com/legal/privacy-policy)
+- [GitHub](https://github.com/crate)
+- [Status](https://cratedb.statuspage.io/)
+
+## API Evangelist rating
+
+**Kin Score 40.1** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 44.7 |
+| Developer ergonomics | 61.9 |
+| Access clarity | 47.4 |
+
+**Agent readiness 8.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/crate-io/](https://apis.io/providers/crate-io/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Crate Io: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/crate-io/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
